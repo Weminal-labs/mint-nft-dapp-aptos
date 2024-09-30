@@ -37,12 +37,12 @@ export function Mint() {
     <>
       <Header />
       <div style={{ overflow: "hidden" }} className="overflow-hidden">
-        <main className="flex flex-col gap-10 md:gap-16 mt-6">
+        <main className="flex flex-col gap-10 md:gap-16 mt-6 px-[60px]">
           <ConnectWalletAlert />
           <HeroSection />
           <StatsSection />
           <OurStorySection />
-          <HowToMintSection />
+          {/* <HowToMintSection /> */}
           <BannerSection />
           <OurTeamSection />
           <FAQSection />

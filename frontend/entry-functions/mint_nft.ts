@@ -10,7 +10,7 @@ export const mintNFT = (args: MintNftArguments): InputTransactionData => {
   const { collectionId, amount } = args;
   return {
     data: {
-      function: `${MODULE_ADDRESS}::${MODULE_NAME}::mint`,
+      function: `${MODULE_ADDRESS}::${MODULE_NAME}::mint_nft`,
       typeArguments: [],
       functionArguments: [collectionId, amount],
     },
