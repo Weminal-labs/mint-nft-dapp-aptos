@@ -56,7 +56,7 @@ export const config: Config = {
   },
 
   faqs: {
-    title: "F.A.Q.",
+    title: "Frequently Asked Questions",
 
     questions: [
       {

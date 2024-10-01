@@ -47,6 +47,39 @@ export const Socials: FC = () => {
           </a>
         </li>
       )}
+      {config.socials.twitter && (
+        <li>
+          <a
+            target="_blank"
+            href={config.socials.twitter}
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
+            <Image src={Twitter} className="dark:invert" />
+          </a>
+        </li>
+      )}
+      {config.socials.discord && (
+        <li>
+          <a
+            target="_blank"
+            href={config.socials.discord}
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
+            <Image src={Discord} className="dark:invert" />
+          </a>
+        </li>
+      )}
+      {config.socials.homepage && (
+        <li>
+          <a
+            target="_blank"
+            href={config.socials.homepage}
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
+            <Image src={Link} className="dark:invert" />
+          </a>
+        </li>
+      )}
     </ul>
   );
 };

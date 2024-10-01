@@ -9,8 +9,8 @@ export const FAQSection: React.FC<FAQSectionProps> = () => {
   if (!config.faqs || !config.faqs.questions.length) return null;
 
   return (
-    <section className="faq-container px-4 max-w-screen-xl mx-auto w-full">
-      <h2 className="text-center heading-md">{config.faqs.title}</h2>
+    <section className="faq-container flex md:flex-row flex-col gap-[474px]">
+      <h2 className="heading-md w-[346px] min-w-[346px] text-left">{config.faqs.title}</h2>
 
       <Accordion type="multiple">
         {config.faqs.questions.map(({ title, description }, i) => (
